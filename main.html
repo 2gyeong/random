@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Random</h1>
+        <form id="groupForm">
+            <label for="names">이름을 입력하세요 (쉼표로 구분)</label><br>
+            <textarea id="names" rows="5" cols="50"></textarea><br><br>
+            <label for="groupSize">한 조당 인원 수:</label>
+            <input type="number" id="groupSize" min="1" value="2"><br><br>
+            <button type="button" onclick="makeGroups()">조 짜기</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="makeGroups.js"></script>
+</body>
+</html>
